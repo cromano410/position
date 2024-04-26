@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    background-image: url(./assets/images/shoutparkbg.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    overflow: hidden;
+
+}
+
+.cartman {
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    bottom: -100px;
+    margin:  90px;
+    transform: scaleY(-12px);
+    animation: bounce 0.2s linear infinite alternate
+
+
+}
+
+.kyle {
+
+width: 200px;
+height: 200px;
+position: relative;
+bottom: -400px;
+margin: 0;
+left: 100px;
+animation: pulse 1s linear infinite alternate
+}
+
+.kenny {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    bottom: -500px;
+    left: 800px;
+    transform: scaleX(-0.5);
+    animation: move 2.5s ease-in infinite alternate 
+   
+
+    
+}
+
+@keyframes move {
+    0%{
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(300px);
+    }
+
+    0% {
+        opacity: 1;
+      }
+
+      80% { opacity: 1;}
+    
+      100% {
+        opacity: 0;}
+    }
+
+@keyframes bounce {
+
+    0%{
+        transform: translateY(0px)
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+    
+}    
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }}
+
+
+
